@@ -1,1 +1,1 @@
-# dhivehi-stt-wav2vec-demo
+# dhivehi stt wav2vec demo

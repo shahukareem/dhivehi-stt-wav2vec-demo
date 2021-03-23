@@ -1,0 +1,9 @@
+git+https://github.com/huggingface/transformers.git
+torchaudio
+librosa
+jiwer
+ffmpeg-python
+streamlit
+sounddevice
+wavio
+matplotlib
