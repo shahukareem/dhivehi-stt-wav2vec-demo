@@ -7,4 +7,4 @@ streamlit
 sounddevice
 wavio
 matplotlib
-SoundFile
+SoundFile==0.10.3.post1

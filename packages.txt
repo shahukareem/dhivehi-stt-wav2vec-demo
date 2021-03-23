@@ -1,5 +1,5 @@
-libsndfile1-dev
 libsndfile1
+libsndfile1-dev
 libportaudio2
 libasound-dev
 libav-tools
