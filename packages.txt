@@ -6,3 +6,8 @@ libav-tools
 libavcodec-extra-53
 libavcodec-extra-53
 ffmpeg
+libasound2-dev
+python-dev
+python-numpy
+python-setuptools
+libsndfile-dev
