@@ -8,3 +8,4 @@ sounddevice
 wavio
 matplotlib
 SoundFile
+sndfile
