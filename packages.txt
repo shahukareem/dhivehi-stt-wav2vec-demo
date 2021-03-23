@@ -1,4 +1,8 @@
 libsndfile1-dev
+libsndfile1
 libportaudio2
 libasound-dev
-ffmpeg.exe
+libav-tools
+libavcodec-extra-53
+libavcodec-extra-53
+ffmpeg
