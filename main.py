@@ -84,13 +84,16 @@ def main():
             audio_bytes = uploaded_file.read()
             st.audio(audio_bytes, format='audio/mp3')
 
-            path_myrecording = f"files/{uploaded_file.name}"
+            # path_myrecording = f"files/{uploaded_file.name}"
+            path_myrecording = f"{uploaded_file.name}"
 
-            with open(os.path.join("files", uploaded_file.name), "wb") as f:
+            with open(os.path.join(uploaded_file.name), "wb") as f:
                 f.write(uploaded_file.getbuffer())
 
             y, sr = librosa.load(path_myrecording)
             transcribe(y)
+
+            os.remove(path_myrecording)
 
     elif input_type == 'Record from microphone':
         filename = str(uuid.uuid4())
@@ -105,7 +108,8 @@ def main():
                 myrecording = record(duration, fs)
                 record_state.text(f"Saving sample as {filename}.mp3")
 
-                path_myrecording = f"files/{filename}.mp3"
+                # path_myrecording = f"files/{filename}.mp3"
+                path_myrecording = f"{filename}.mp3"
 
                 save_record(path_myrecording, myrecording, fs)
 
@@ -115,6 +119,8 @@ def main():
                 st.pyplot(fig)
                 y, sr = librosa.load(path_myrecording)
                 transcribe(y)
+
+                os.remove(path_myrecording)
 
 
 if __name__ == '__main__':
